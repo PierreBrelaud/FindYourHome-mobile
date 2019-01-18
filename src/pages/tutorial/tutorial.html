@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let accomodation of accomodations">
+      <div class="item-profile" text-center #profilePic [style.background-image]="'url(' +  + ')'"></div>
+      <h2>{{accomodation.description}}</h2>
+      <img src="127.0.0.1:8000{{accomodation.picture}}" alt="">
+      <h2>{{accomodation.picture}}</h2>
+      <p>{{accomodation.name}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
